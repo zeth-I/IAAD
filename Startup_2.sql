@@ -37,24 +37,24 @@ create table PROJETOS(
     nome_projeto VARCHAR(255) NOT NULL
 );
 
--- Populando células
+-- Populando células 
 
 insert into STARTUP values
 	(10001,'Tech4Toy','Porto Alegre'),
-    (10002,'Smart123','Belo Horizonte'),
-    (10003,'knowledgeUp','Rio de Janeiro'),
-    (10004,'BSI Next Level','Recife'),
-    (10005,'QualiHealth','São Paulo'),
-    (10006,'ProEdu','Florianópolis');
+    (Default,'Smart123','Belo Horizonte'),
+    (Default,'knowledgeUp','Rio de Janeiro'),
+    (Default,'BSI Next Level','Recife'),
+    (Default,'QualiHealth','São Paulo'),
+    (Default,'ProEdu','Florianópolis');
 
 insert into PROGRAMADOR values
 	(30001,10001,'João Pedro','M','1993-06-23','joaop@mail.com'),
-    (30002,10002,'Paula Silva','F','1986-01-10','paulas@mail.com'),
-    (30003,10003,'Renata Vieira','F','1991-05-07','renatav@mail.com'),
-	(30004,10004,'Felipe Santos','M','1976-11-25','felipes@mail.com'),
-    (30005,10001,'Ana Cristina','F','1968-02-19','anac@mail.com'),
-    (30006,10004,'Alexandre Alves','M','1988-07-07','alexandrea@mail.com'),
-    (30007,10002,'Laura Marques','F','1987-10-04','lauram@mail.com');
+    (Default,10002,'Paula Silva','F','1986-01-10','paulas@mail.com'),
+    (Default,10003,'Renata Vieira','F','1991-05-07','renatav@mail.com'),
+	(Default,10004,'Felipe Santos','M','1976-11-25','felipes@mail.com'),
+    (Default,10001,'Ana Cristina','F','1968-02-19','anac@mail.com'),
+    (Default,10004,'Alexandre Alves','M','1988-07-07','alexandrea@mail.com'),
+    (Default,10002,'Laura Marques','F','1987-10-04','lauram@mail.com');
 
 insert into PROGRAMADOR_LINGUAGEM values
 	(30001,20001),
@@ -68,19 +68,19 @@ insert into PROGRAMADOR_LINGUAGEM values
 
 insert into LINGUAGEM_PROGRAMACAO values
 	(20001,'Python','1991'),
-    (20002,'PHP','1995'),
-    (20003,'Java','1995'),
-    (20004,'C','1972'),
-    (20005,'JavaScript','1995'),
-    (20006,'Dart','2011');
+    (Default,'PHP','1995'),
+    (Default,'Java','1995'),
+    (Default,'C','1972'),
+    (Default,'JavaScript','1995'),
+    (Default,'Dart','2011');
 
 insert into PROJETOS values
 	(40001,10001,'Konzetsu'),
-    (40002,10002,'Piston'),
-    (40003,10003,'EveryDay'),
-    (40004,10004,'PumpIt'),
-    (40005,10005,'BackOffice'),
-    (40006,10006,'Julileu.IO');
+    (Default,10002,'Piston'),
+    (Default,10003,'EveryDay'),
+    (Default,10004,'PumpIt'),
+    (Default,10005,'BackOffice'),
+    (Default,10006,'Julileu.IO');
 
 -- Aplicando a restrição de integridade referencial (chaves estrangeiras - FK)
 

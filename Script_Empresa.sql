@@ -18,7 +18,8 @@ create table FUNCIONARIO(
 	Salario decimal(10,2), 
 	Cpf_supervisor CHAR(11),
 	Dnr INT,
-	PRIMARY KEY(Cpf));  
+	PRIMARY KEY(Cpf)
+);  
 
 create table DEPARTAMENTO(
 	Dnome VARCHAR(15) NOT NULL,
@@ -26,31 +27,39 @@ create table DEPARTAMENTO(
 	Cpf_gerente CHAR(11),
 	Data_inicio_gerente DATE,
 
-	UNIQUE(Dnome));
+	UNIQUE(Dnome)
+);
 	
 create table LOCALIZACAO_DEP(
 	Dnumero INT NOT NULL,
 	Dlocal VARCHAR(15) NOT NULL,
-	PRIMARY KEY (Dnumero, Dlocal));
+	PRIMARY KEY (Dnumero, Dlocal)
+);
+	
 create table PROJETO(
 	Projnome VARCHAR(15) NOT NULL,
 	Projnumero INT NOT NULL,
 	Projlocal VARCHAR(15),
 	Dnum INT NOT NULL,
 	PRIMARY KEY(ProjNumero),
-	UNIQUE(Projnome));
+	UNIQUE(Projnome)
+);
+
 create table DEPENDENTE(
 	Fcpf CHAR(11) NOT NULL,
 	Nome_dependente VARCHAR(15) NOT NULL,
 	Sexo CHAR,
 	Datanasc DATE,
 	Parentesco VARCHAR(8),
-	PRIMARY KEY(Fcpf, Nome_dependente));
+	PRIMARY KEY(Fcpf, Nome_dependente)
+);
+
 create table TRABALHA_EM(
 	Fcpf CHAR (11) NOT NULL,
 	Pnr INT  NOT NULL,
 	Horas DECIMAL(3,1),
-	PRIMARY KEY (Fcpf,Pnr));
+	PRIMARY KEY (Fcpf,Pnr)
+);
 	
 -- populando/carregando as tabelas do banco de dados
 insert into FUNCIONARIO values
