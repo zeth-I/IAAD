@@ -1,7 +1,7 @@
 begin;
-drop schema if exists hospital; 
-create schema hospital; 
-use hospital;
+drop schema if exists clinicas_medicas; 
+create schema clinicas_medicas; 
+use clinicas_medicas;
 
 -- Criando tabelas
 create table Clinicas(
